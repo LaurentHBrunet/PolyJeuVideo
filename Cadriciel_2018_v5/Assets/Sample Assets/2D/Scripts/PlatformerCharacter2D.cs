@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PlatformerCharacter2D : MonoBehaviour 
 {
@@ -42,6 +43,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 
 	[SerializeField] GameObject jumpBarCanvas;
 
+
+	[Range(0, UInt16.MaxValue)]
 	[SerializeField] int maxJumps = 3;
 
 	int currentJumps = 0;
