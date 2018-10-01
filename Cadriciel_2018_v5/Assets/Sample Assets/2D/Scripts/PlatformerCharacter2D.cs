@@ -134,7 +134,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 			//only control the player if grounded or airControl is turned on
 			if(grounded || airControl)
 			{
-				Debug.Log("Move : " + move);
+				//Debug.Log("Move : " + move);
 				// Reduce the speed if crouching by the crouchSpeed multiplier
 				move = (crouch ? move * crouchSpeed : move);
 
